@@ -1,4 +1,16 @@
-@use './variables' as *;
+:root {
+  --color-primary: #003566;
+  --color-primary-dark: #00203d;
+  --color-primary-light: #6686a3;
+
+  --color-secondary: #ffd60a;
+  --color-secondary-dark: #998006;
+  --color-secondary-light: #ffe66c;
+
+  --color-dark: #000814;
+  --color-light: #e6ebf0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +20,9 @@
 *::after,
 *::after {
   box-sizing: inherit;
+}
+*:focus {
+  outline: none;
 }
 
 html {
@@ -20,13 +35,13 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
-  color: $color-dark;
+  color: #666;
   padding: 3rem;
   overflow-x: hidden;
   background-image: linear-gradient(
     to right bottom,
-    $color-secondary-dark,
-    $color-secondary-light
+    var(--color-primary-dark),
+    var(--color-primary-light)
   );
   background-size: cover;
   background-repeat: no-repeat;
