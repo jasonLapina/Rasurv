@@ -1,14 +1,14 @@
 :root {
-  --color-primary: #003566;
-  --color-primary-dark: #00203d;
-  --color-primary-light: #6686a3;
+  --color-primary: #dd096d;
+  --color-primary-dark: #9b064c;
+  --color-primary-light: #e75399;
 
-  --color-secondary: #ffd60a;
-  --color-secondary-dark: #998006;
-  --color-secondary-light: #ffe66c;
+  --color-secondary: #110b11;
+  --color-secondary-dark: #0a070a;
+  --color-secondary-light: #413c41;
 
-  --color-dark: #000814;
-  --color-light: #e6ebf0;
+  --color-dark: #350019;
+  --color-light: #e7e7e7;
 }
 
 * {
@@ -35,7 +35,7 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
-  color: #666;
+  color: #444;
   padding: 3rem;
   overflow-x: hidden;
   background-image: linear-gradient(
@@ -48,4 +48,9 @@ body {
   min-height: 100vh;
 }
 
-///////// PALETTE https://coolors.co/palette/000814-001d3d-003566-ffc300-ffd60a
+a,
+a:visited {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--color-primary);
+}

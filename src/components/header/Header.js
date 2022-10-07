@@ -1,6 +1,6 @@
 import classes from './Header.module.scss';
 import logo from '../../assets/Rasurv-logo.png';
-import dp from '../../assets/profile-pic.jpg';
+import dp from '../../assets/profile-pic.webp';
 
 const Header = () => {
   return (

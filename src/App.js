@@ -1,14 +1,14 @@
 import classes from './App.module.scss';
 import Header from './components/header/Header';
-import Main from './components/main/Main';
+import Main from './components/main-content/Main';
 import SideBar from './components/side-bar/SideBar';
 function App() {
   return (
     <div className={classes.container}>
       <Header />
       <div className={classes.content}>
-        <SideBar className={classes['side-bar']} />
-        <Main className={classes.main} />
+        <SideBar />
+        <Main />
       </div>
     </div>
   );

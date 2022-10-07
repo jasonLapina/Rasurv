@@ -1,0 +1,96 @@
+.gallery {
+  border-top: solid 1px #aaa;
+  display: flex;
+
+  // FIGURE ELEMENT KEEPS IMAGES FROM OVERFLOWING
+  figure {
+    width: 100%;
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.overview {
+  background-color: var(--color-light);
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px #aaa;
+  line-height: 2;
+  h1 {
+    color: var(--color-dark);
+    font-size: 3rem;
+    margin-left: 2rem;
+    font-weight: 100;
+    letter-spacing: 1.6px;
+  }
+  &__stars {
+    margin-right: auto;
+    display: flex;
+    gap: 5px;
+    margin-left: 2rem;
+    align-items: center;
+  }
+}
+.icon {
+  font-size: 2.4rem;
+  color: var(--color-primary);
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  margin-right: 2.4rem;
+  gap: 2px;
+  // THIS SPAN IS FOR THE ACTUAL LOCATION
+  span {
+    position: relative;
+  }
+  // THE HOVER EFFECT ON SPAN
+  span::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 200%) scaleY(0);
+    width: 2%;
+    height: 0.2rem;
+    border-radius: 1rem;
+    background-color: var(--color-primary);
+    transition: width 0.3s 0.2s, transform 0.2s;
+  }
+  span:hover::before {
+    transform: translate(-50%, 200%) scaleY(1);
+    width: 100%;
+  }
+  .icon {
+    animation: bounce 0.4s infinite alternate;
+    line-height: 0;
+  }
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3rem;
+  background-color: var(--color-primary);
+  padding: 0 2rem;
+  color: var(--color-light);
+  text-align: center;
+  &--avg {
+    font-size: 3rem;
+  }
+  &--population {
+    font-size: 1.6rem;
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-3px);
+  }
+}
