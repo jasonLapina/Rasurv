@@ -28,7 +28,17 @@ const SideBar = () => {
           <span>tours</span>
         </li>
       </ul>
-      <p className={classes.legal}>© 2022 by Rasurv. All rights RASURVED.</p>
+      <p className={classes.legal}>
+        © 2022 by{' '}
+        <a
+          href='https://github.com/jasonLapina'
+          rel='noreferrer'
+          target='_blank'
+        >
+          Jason Lapina.
+        </a>{' '}
+        All rights RASURVED.
+      </p>
     </nav>
   );
 };

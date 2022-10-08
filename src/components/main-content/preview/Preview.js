@@ -45,7 +45,7 @@ const Preview = () => {
           </a>
         </div>
         <div className={classes.rating}>
-          <span className={classes['rating--avg']}>6.9</span>
+          <span className={classes['rating--avg']}>9.6</span>
           <span className={classes['rating--population']}>420 votes</span>
         </div>
       </div>
