@@ -13,10 +13,10 @@
 }
 
 .overview {
-  background-color: var(--color-light);
+  background-color: white;
   display: flex;
   align-items: center;
-  border-bottom: solid 1px #aaa;
+  border-bottom: var(--border-bottom);
   line-height: 2;
   h1 {
     color: var(--color-dark);
@@ -79,7 +79,7 @@
   color: var(--color-light);
   text-align: center;
   &--avg {
-    font-size: 3rem;
+    font-size: 2.4rem;
   }
   &--population {
     font-size: 1.6rem;

@@ -1,3 +1,10 @@
 .main {
   flex: 1;
 }
+
+.details {
+  background-color: #ddd;
+  display: flex;
+  gap: 4.5rem;
+  padding: 4rem;
+}
