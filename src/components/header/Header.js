@@ -1,5 +1,5 @@
 import classes from './Header.module.scss';
-import logo from '../../assets/Rasurv-logo.png';
+import logo from '../../assets/Rasurv-logo.webp';
 import dp from '../../assets/profile-pic.webp';
 
 const Header = () => {

@@ -1,3 +1,4 @@
+import Booking from './Booking/Booking';
 import Detail from './detail/Detail';
 import classes from './Main.module.scss';
 import Preview from './preview/Preview';
@@ -10,6 +11,7 @@ const Main = () => {
         <Detail />
         <Reviews />
       </div>
+      <Booking />
     </main>
   );
 };

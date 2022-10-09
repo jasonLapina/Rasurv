@@ -1,0 +1,59 @@
+.booking {
+  background-color: white;
+  text-align: center;
+  padding: 2.5rem 0;
+  h2 {
+    font-weight: 300;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.btn {
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  padding: 1.6rem 0;
+  border: none;
+  border-radius: 10rem;
+  color: white;
+  font-size: 2rem;
+  font-weight: 300;
+  font-family: inherit;
+  background-size: 200%;
+  background-image: linear-gradient(
+    to left,
+    var(--color-primary-light),
+    var(--color-primary),
+    var(--color-primary-dark)
+  );
+  transition: background-position 0.3s;
+  &:hover {
+    background-position: right;
+  }
+
+  & > * {
+    transition: all 0.2s;
+  }
+
+  &:hover &--book {
+    transform: translateY(200%);
+  }
+  &:hover &--rooms {
+    top: 50%;
+  }
+  span {
+    display: block;
+  }
+  &--book {
+    padding: 0 7rem;
+  }
+
+  &--rooms {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: -22%;
+    transform: translate(-50%, -50%);
+  }
+}
