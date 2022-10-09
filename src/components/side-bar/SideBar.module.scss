@@ -1,6 +1,6 @@
+@use '../../media-queries.scss' as *;
 .nav {
   flex-basis: 18%;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -11,8 +11,15 @@
     flex-direction: column;
     gap: 3.2rem;
     margin-top: 4rem;
+    @include query(tabPort) {
+      flex-direction: row;
+      margin: 2rem 0;
+    }
   }
   li {
+    @include query(tabPort) {
+      flex: 1;
+    }
     font-weight: 300;
     cursor: pointer;
     padding: 1rem 0;
@@ -26,7 +33,6 @@
     transition: color 0.2s 0.3s;
     span {
       position: relative;
-      z-index: 2;
     }
     &:hover {
       color: var(--color-dark);
@@ -47,9 +53,13 @@
     }
   }
 }
+
 .icon {
   margin: 0 2rem 0 2.5rem;
   display: block;
+  @include query(phone) {
+    margin: 0 1rem;
+  }
 }
 
 .legal {
@@ -57,4 +67,7 @@
   text-align: center;
   line-height: 1.7;
   padding: 2rem 4rem;
+  @include query(tabPort) {
+    display: none;
+  }
 }

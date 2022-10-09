@@ -1,10 +1,18 @@
+@use './media-queries.scss' as *;
 .container {
   max-width: 130rem;
   background-color: var(--color-light);
   margin: 8rem auto;
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  @include query(tabLand) {
+    margin: 0;
+    max-width: 100%;
+  }
 }
 
 .content {
   display: flex;
+  @include query(tabPort) {
+    flex-direction: column;
+  }
 }

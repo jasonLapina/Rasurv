@@ -1,3 +1,4 @@
+@use '../../../media-queries.scss' as *;
 .gallery {
   border-top: solid 1px #aaa;
   display: flex;
@@ -24,6 +25,9 @@
     margin-left: 2rem;
     font-weight: 300;
     letter-spacing: 1.6px;
+    @include query(phone) {
+      letter-spacing: 0;
+    }
   }
   &__stars {
     margin-right: auto;

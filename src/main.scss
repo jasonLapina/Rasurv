@@ -1,3 +1,4 @@
+@use './media-queries.scss' as *;
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
 
 :root {
@@ -34,6 +35,9 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  @include query(tabLand) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -42,7 +46,6 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
   color: #666;
-  padding: 3rem;
   overflow-x: hidden;
   background-image: linear-gradient(
     to right bottom,
